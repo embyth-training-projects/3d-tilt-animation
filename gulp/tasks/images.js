@@ -1,4 +1,5 @@
 import {paths} from '../paths.js';
+import fs from 'fs';
 import pkg from 'gulp';
 import changed from 'gulp-changed';
 import imagemin from 'gulp-imagemin';
@@ -36,9 +37,11 @@ export const images = (done) => {
     .pipe(changed(destination.images.content))
     .pipe(dest(destination.images.content))
 
-  src(`${source.images.all}sprite.svg`)
+  if (fs.existsSync(`${source.images.all}sprite.svg`)) {
+    src(`${source.images.all}sprite.svg`)
     .pipe(changed(destination.images.all))
     .pipe(dest(destination.images.all))
+  }
 
   done();
 };

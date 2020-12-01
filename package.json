@@ -1,7 +1,7 @@
 {
-  "name": "startup-gulp-template",
-  "version": "1.4.0",
-  "description": "Lightweight startup Gulp with SASS template for web project",
+  "name": "ucard-neo",
+  "version": "1.0.0",
+  "description": "Learning to create 3D Tilt Animation with GreenSock Animation Platform",
   "private": true,
   "type": "module",
   "scripts": {
@@ -19,14 +19,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/embyth/startup-gulp-template.git"
+    "url": "git+ssh://git@github.com/embyth/3d-tilt-animation.git"
   },
   "author": "Rostyslav Miniukov <miniukovrostyslav@gmail.com> (https://github.com/embyth)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/embyth/startup-gulp-template/issues"
+    "url": "https://github.com/embyth/3d-tilt-animation/issues"
   },
-  "homepage": "https://github.com/embyth/startup-gulp-template#readme",
+  "homepage": "https://github.com/embyth/3d-tilt-animation#readme",
   "devDependencies": {
     "@babel/core": "7.12.8",
     "@babel/preset-env": "7.12.7",

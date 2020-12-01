@@ -6,6 +6,8 @@ Learning to create 3D Tilt Animation with GreenSock Animation Platform
 
 Author: [Rostyslav Miniukov](https://github.com/embyth/)
 
+[Project Demo](https://embyth.github.io/3d-tilt-animation/)
+
 ---
 
 ## Installation

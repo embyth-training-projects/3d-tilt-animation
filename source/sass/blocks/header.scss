@@ -1,0 +1,155 @@
+.page-header {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  min-height: 100vh;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../img/map.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.02;
+    transform: scale(1.4);
+    z-index: -1;
+
+    @media ($tablet) {
+      transform: scale(1.3);
+    }
+
+    @media ($mobile) {
+      content: none;
+    }
+  }
+}
+
+.page-header__top {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  padding: 0 150px;
+
+  @media ($tablet) {
+    padding: 0 30px;
+  }
+
+  @media ($mobile) {
+    padding: 0 15px;
+  }
+}
+
+.page-header__content {
+  max-width: 1026px;
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin-top: 275px;
+  margin-bottom: 50px;
+
+  @media ($tablet) {
+    margin-top: 200px;
+    flex-flow: column nowrap;
+    max-width: unset;
+    padding: 0 30px;
+  }
+
+  @media ($mobile) {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 0 15px;
+  }
+}
+
+.page-header__info {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  max-width: 455px;
+
+  @media ($tablet) {
+    max-width: unset;
+    margin-bottom: 100px;
+  }
+
+  @media ($mobile) {
+    margin-bottom: 30px;
+  }
+}
+
+.page-header__title {
+  font-size: fz(title);
+  line-height: lh(title);
+  font-weight: fw(bold);
+  margin: 0 0 30px;
+
+  strong {
+    color: $accent;
+  }
+
+  span {
+    color: $white;
+    font-weight: fw(light);
+  }
+}
+
+.page-header__text {
+  margin: 0 0 30px;
+  font-weight: fw(light);
+}
+
+.page-header__link {
+  font-size: fz(link);
+  font-weight: fw(bold);
+  line-height: lh(link);
+  color: $font-color-link;
+  transition: color 0.3s ease;
+
+  &:hover,
+  &:focus {
+    color: $font-color-link--hover;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.page-header__icon-button {
+  padding: 13px 15px;
+  border-radius: 50%;
+  font-style: normal;
+  line-height: 0;
+  font-size: 0;
+  margin-right: 10px;
+
+  @media ($tablet) {
+    padding: 13px 15px;
+  }
+
+  @media ($mobile) {
+    padding: 13px 15px;
+  }
+
+  &:hover {
+    background-color: $bg-color-button;
+  }
+}
+
+.page-header__card {
+  max-width: 458px;
+
+  @media ($tablet) {
+    max-width: unset;
+    display: flex;
+    justify-content: center;
+  }
+}

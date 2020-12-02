@@ -1,1 +1,24 @@
-// Buttons
+.button {
+  display: inline-block;
+  font-size: fz(button);
+  font-weight: fw(regular);
+  line-height: lh(button);
+  color: $font-color-button;
+  background-color: $bg-color-button;
+  padding: 16px 36px;
+  border-radius: 25px;
+  transition: background 0.3s ease;
+
+  &:hover,
+  &:focus {
+    background-color: $bg-color-button--hover;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media ($mobile) {
+    padding: 12px 26px;
+  }
+}

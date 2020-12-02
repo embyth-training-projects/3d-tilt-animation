@@ -1,0 +1,23 @@
+.logo {
+  font-size: fz(logo);
+  font-weight: fw(bold);
+  font-family: ff(ubuntu);
+  color: $font-color-logo;
+  user-select: none;
+
+  span {
+    font-weight: fw(light);
+    transition: color 0.3s ease;
+  }
+
+  &:hover,
+  &:focus {
+    span {
+      color: $font-color-logo--hover;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

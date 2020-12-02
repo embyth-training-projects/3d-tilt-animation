@@ -1,19 +1,13 @@
 // Media BreakPoints
 $mobile-width: 320px;
-$mobile-l-width: 425px;
-$tablet-width: 768px;
-$desktop-width: 1150px;
-
-$mobile-l-max-width: ($tablet-width - 1);
+$tablet-width: 767px;
+$desktop-width: 1149px;
 
 $retina-dpi: 144dpi;
 
-$mobile: "min-width: #{$mobile-width}";
-$mobile-l: "min-width: #{$mobile-l-width}";
-$tablet: "min-width: #{$tablet-width}";
+$mobile: "max-width: #{$tablet-width}";
+$tablet: "max-width: #{$desktop-width}";
 $desktop: "min-width: #{$desktop-width}";
-
-$mobile-l-only: "min-width: #{$mobile-l-width}) and (max-width: #{$mobile-l-max-width}";
 
 $retina: "min-resolution: #{$retina-dpi}";
 
@@ -36,24 +30,49 @@ $font-weights: (
   bold: 700,
 );
 
-$line-height-base: 24px;
+$line-height-base: 32px;
+$line-height-logo: 30px;
+$line-height-button: 18px;
+$line-height-title: 43px;
+$line-height-link: 18px;
 
 $font-line-height: (
   base: $line-height-base,
+  logo: $line-height-logo,
+  button: $line-height-button,
+  title: $line-height-title,
+  link: $line-height-link,
 );
 
-$font-size-base: 15px;
+$font-size-base: 18px;
+$font-size-button: 16px;
+$font-size-logo: 26px;
+$font-size-title: 33px;
+$font-size-link: 16px;
 
 $font-sizes: (
   base: $font-size-base,
+  logo: $font-size-logo,
+  button: $font-size-button,
+  title: $font-size-title,
+  link: $font-size-link,
 );
 
 // Color Variables
 $black: #000000;
 $white: #ffffff;
+$base: #1c1c1c;
+$accent: #b01ddc;
 
-$bg-color-body: $white;
+$bg-color-body: $base;
+$bg-color-button: $accent;
+$bg-color-button--hover: darken($accent, 10%);
 
 $border-color-button: $black;
 
-$font-color-base: $black;
+$font-color-base: $white;
+$font-color-logo: $white;
+$font-color-logo--hover: $accent;
+$font-color-button: $white;
+$font-color-link: $white;
+$font-color-link--hover: $accent;

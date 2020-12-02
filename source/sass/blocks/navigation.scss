@@ -1,0 +1,21 @@
+.nav {
+  width: 100%;
+}
+
+.nav__list {
+  @include list-reset;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin-top: 55px;
+
+  @media ($tablet) {
+    margin-top: 30px;
+  }
+}
+
+.nav__list-item {
+  display: flex;
+  align-items: center;
+}

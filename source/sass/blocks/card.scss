@@ -4,9 +4,11 @@
 
   &--animation {
     position: relative;
+    zoom: 0.9;
 
     img {
       position: absolute;
+      transition: all 1s ease;
     }
   }
 
@@ -30,6 +32,7 @@
 .card-layer {
   width: 458px;
   height: 288px;
+  opacity: 0;
 
   &--top {
     top: 0;
@@ -38,14 +41,14 @@
   }
 
   &--between {
-    top: 10px;
-    left: -10px;
+    top: 50px;
+    left: -50px;
     z-index: 4;
   }
 
   &--bottom {
-    top: 20px;
-    left: -20px;
+    top: 100px;
+    left: -100px;
     z-index: 3;
   }
 }
@@ -54,24 +57,30 @@
   top: 42px;
   right: 46px;
   z-index: 6;
+  opacity: 0;
 }
 
 .card-chip {
   top: 77px;
   left: 50px;
   z-index: 6;
+  opacity: 0;
 }
 
 .card-holder {
   top: 158px;
   left: 50px;
   z-index: 6;
+  opacity: 0;
+  zoom: 3.5;
 }
 
 .card-date {
   top: 195px;
   left: 145px;
   z-index: 6;
+  opacity: 0;
+  zoom: 3;
 }
 
 .card-map {
@@ -79,6 +88,6 @@
   left: 25px;
   width: 410px;
   height: 239px;
-  opacity: 0.07;
+  opacity: 0;
   z-index: 5;
 }

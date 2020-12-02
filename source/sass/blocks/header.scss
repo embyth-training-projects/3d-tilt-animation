@@ -52,8 +52,9 @@
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-  margin-top: 275px;
+  margin-top: 250px;
   margin-bottom: 50px;
+  transform-style: preserve-3d;
 
   @media ($tablet) {
     margin-top: 200px;
